@@ -4,4 +4,4 @@
 
 
 used plugins
- -Gstreamer
+<br /> -Gstreamer
