@@ -1,12 +1,15 @@
-﻿<Window x:Class="GCS.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GCS"
+        xmlns:camera="clr-namespace:GCS.fe.components.camera" x:Class="GCS.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" BorderThickness="0" WindowState="Maximized">
-    <Canvas>
-            
+    <Canvas Name="container">
+
+        <camera:cntrlCamera x:Name="camView" Width="{Binding ActualWidth, ElementName=container}" Height="{Binding ActualHeight, ElementName=container}" />
+        <Button Name="takeSnapshot" Width="250" Height="50" Content="take snapshot" FontSize="25" Click="takeSnapshot_Click" ></Button>
     </Canvas>
 </Window>
