@@ -22,9 +22,22 @@ namespace GCS
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static string elevationFolder = "elevation/srtm";
+        be.elevation.srtm.SRTMData elevation;
+        int? result = 0;
         public MainWindow()
         {
             InitializeComponent();
+
+            //check elevation folder
+            if (!Directory.Exists(elevationFolder))
+            {
+                Directory.CreateDirectory(elevationFolder);
+            }
+            //init srtm directory
+            elevation = new be.elevation.srtm.SRTMData(elevationFolder);
+            //get elevation data from lat and long
+            result = elevation.GetElevation(40.9201024, 29.3137833);//visit this web site for elevation datas : https://dwtkns.com/srtm30m/
 
 
             //check gstreamer dll and load

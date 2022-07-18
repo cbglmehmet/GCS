@@ -86,6 +86,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="be\elevation\srtm\ISRTMData.cs" />
+    <Compile Include="be\elevation\srtm\ISRTMDataCell.cs" />
+    <Compile Include="be\elevation\srtm\SRTMData.cs" />
+    <Compile Include="be\elevation\srtm\SRTMDataCell.cs" />
     <Compile Include="be\sockets\serial.cs" />
     <Compile Include="be\sockets\ssh.cs" />
     <Compile Include="be\sockets\tcpClient.cs" />
@@ -141,7 +145,6 @@
     <Folder Include="be\communication\" />
     <Folder Include="be\configs\" />
     <Folder Include="be\elevation\dted\" />
-    <Folder Include="be\elevation\srtm\" />
     <Folder Include="be\log\" />
     <Folder Include="be\network\" />
     <Folder Include="be\packages\" />
