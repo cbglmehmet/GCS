@@ -46,10 +46,11 @@ namespace GCS
                 File.WriteAllBytes("libgstreamer-1.0-0.dll", GCS.Properties.Resources.libgstreamer_1_0_0);
             }
 
+            
 
             //test pipeline
-            camView.Pipeline = "videotestsrc ! video/x-raw, width=1280, height=720,framerate=25/1 ! clockoverlay ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink";
-            camView.startVideo();
+            //camView.Pipeline = "videotestsrc ! video/x-raw, width=1280, height=720,framerate=25/1 ! clockoverlay ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink";
+            //camView.startVideo();
 
             //test counter
             Thread threadTimer = new Thread(new ThreadStart(threadTimer_DoWork));
@@ -62,13 +63,13 @@ namespace GCS
             do
             {
                 counter++;
-                camView.Sembology = "MehmetCBGL\n" + counter.ToString();
+                //camView.Sembology = "MehmetCBGL\n" + counter.ToString();
                 Thread.Sleep(1000);
             } while (true);
         }
         private void takeSnapshot_Click(object sender, RoutedEventArgs e)
         {
-            camView.takeSnapshot();
+            //camView.takeSnapshot();
         }
     }
 }

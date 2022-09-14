@@ -111,6 +111,7 @@ namespace System.Drawing
 
         static Dictionary<Color, SKPaint> brushcache = new Dictionary<Color, SKPaint>();
 
+        [Obsolete]
         public static SKPaint ToSKPaint(this Brushh brush)
         {
             if (brush is SolidBrushh)
@@ -127,15 +128,6 @@ namespace System.Drawing
                 return brushcache[((SolidBrushh)brush).Color];
             }
 
-            if (brush is HatchBrush)
-            {
-                return brush.nativeBrush;
-            }
-
-            if (brush is TextureBrush)
-            {
-                return brush.nativeBrush;
-            }
 
             if (brush is LinearGradientBrushh)
             {

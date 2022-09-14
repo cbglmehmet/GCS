@@ -568,11 +568,7 @@ namespace GCS.be.video
                 //https://github.com/GStreamer/gstreamer/blob/master/tools/gst-launch.c#L1125
                 NativeMethods.gst_init(ref argc, argv);
             }
-            catch (DllNotFoundException ex)
-            {
-
-            }
-            catch (BadImageFormatException)
+            catch 
             {
 
             }
@@ -619,7 +615,6 @@ namespace GCS.be.video
             var appsink = NativeMethods.gst_bin_get_by_name(pipeline, "outsink");
             //var appsink = NativeMethods.gst_element_factory_make("appsink", null);
 
-            bool newdata = false;
             GstAppSinkCallbacks callbacks = new GstAppSinkCallbacks();
             //var callbackhandle = GCHandle.Alloc(callbacks, GCHandleType.Pinned);
             /*callbacks.new_buffer += (sink, data) =>
@@ -991,7 +986,7 @@ namespace GCS.be.video
                     }
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 _onNewImage?.Invoke(null, null);
             }

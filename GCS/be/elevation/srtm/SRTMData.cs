@@ -9,7 +9,6 @@ namespace GCS.be.elevation.srtm
 {
     public class SRTMData : ISRTMData
     {
-        private const int RETRIES = 3;
 
         public SRTMData(string dataDirectory)
         {
@@ -98,7 +97,6 @@ namespace GCS.be.elevation.srtm
 
             var filePath = Path.Combine(DataDirectory, filename + ".hgt");
             var zipFilePath = Path.Combine(DataDirectory, filename + ".SRTMGL1.hgt.zip");
-            var count = -1;
 
             if (!File.Exists(filePath) && !File.Exists(zipFilePath) &&
                 this.GetMissingCell != null)

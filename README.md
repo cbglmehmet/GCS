@@ -5,3 +5,4 @@
 
 used plugins
 <br /> -Gstreamer
+<br /> -GMap

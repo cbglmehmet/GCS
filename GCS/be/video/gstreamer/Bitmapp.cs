@@ -16,9 +16,6 @@ namespace System.Drawing
     [Serializable]
     public class Bitmapp : Imagee, ISerializable, ICloneable, IDisposable
     {
-        private object p;
-        private Size size;
-
         public Bitmapp(int width, int height, int stride, SKColorType bgra8888 = (SKColorType.Bgra8888),
             IntPtr data = default(IntPtr))
         {
