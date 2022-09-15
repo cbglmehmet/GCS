@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GCS.fe.assets.styles">
+
+    <Style x:Key="playR" TargetType="Label">
+        <Setter Property="FontFamily" Value="../fonts/Play-Regular.ttf #Play"/>
+    </Style>
+    <Style x:Key="playB" TargetType="Label">
+        <Setter Property="FontFamily" Value="../fonts/Play-Bold.ttf #Play"/>
+    </Style>
+
+</ResourceDictionary>

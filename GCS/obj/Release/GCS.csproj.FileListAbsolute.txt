@@ -107,7 +107,6 @@ C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\fe\components\map\cntrlMa
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\MainWindow.g.cs
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\App.g.cs
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS_Content.g.cs
-C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GeneratedInternalTypeHelper.g.cs
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS_MarkupCompile.cache
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS_MarkupCompile.lref
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\fe\components\camera\cntrlCamera.baml
@@ -121,3 +120,5 @@ C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS.csproj.CopyComplete
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS.exe
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS.pdb
 C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\GCS.csprojAssemblyReference.cache
+C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\App.baml
+C:\Users\MehmetCBGL\Desktop\gitlab\GCS\GCS\obj\Release\fe\assets\styles\fontFamilies.baml

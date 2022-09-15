@@ -9,9 +9,12 @@
         Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" BorderThickness="0" WindowState="Maximized">
     <Canvas x:Name="container">
 
+        <!--Video-->
         <!--<camera:cntrlCamera x:Name="camView" Width="{Binding ActualWidth, ElementName=container}" Height="{Binding ActualHeight, ElementName=container}" />-->
-
         <!--<Button Name="takeSnapshot" Width="250" Height="50" Content="take snapshot" FontSize="25" Click="takeSnapshot_Click" ></Button>-->
+        <!--Map-->
         <!--<map:cntrlMap Width="{Binding ActualWidth, ElementName=container}" Height="{Binding ActualHeight, ElementName=container}" />-->
+        <!--Font-->
+        <!--<Label Margin="0,0,0,0" Height="100" Width="300" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="Black" FontSize="24" Style="{StaticResource playR}" Content="KONUM TUTUŞ"></Label>-->
     </Canvas>
 </Window>

@@ -106,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="fe\assets\styles\fontFamilies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="fe\components\camera\cntrlCamera.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -174,6 +178,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="fe\assets\fonts\Play-Bold.ttf" />
+    <Resource Include="fe\assets\fonts\Play-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -193,10 +199,8 @@
     <Folder Include="be\password\" />
     <Folder Include="be\power\" />
     <Folder Include="be\screen\" />
-    <Folder Include="fe\assets\fonts\" />
     <Folder Include="fe\assets\images\" />
     <Folder Include="fe\assets\language\" />
-    <Folder Include="fe\assets\styles\" />
     <Folder Include="fe\pages\" />
     <Folder Include="fe\views\" />
   </ItemGroup>
@@ -208,6 +212,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Release\map\_empty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\_empty.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.0\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.0\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
