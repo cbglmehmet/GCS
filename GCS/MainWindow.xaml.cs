@@ -29,6 +29,10 @@ namespace GCS
         {
             InitializeComponent();
 
+            this.SourceInitialized += new EventHandler(mainWindow_SourceInitialized);
+
+     
+
             //check elevation folder
             if (!Directory.Exists(elevationFolder))
             {
@@ -55,21 +59,39 @@ namespace GCS
             //test counter
             Thread threadTimer = new Thread(new ThreadStart(threadTimer_DoWork));
             threadTimer.Start();
+
+            
         }
 
-        private int counter = 0;
+        private double counter = 100;
         private void threadTimer_DoWork()
         {
             do
             {
-                counter++;
+                counter-= 0.1;
+
+                if(counter < 0)
+                {
+                    counter = 100;
+                }
+
+                timeLine.RemainingTime = "00:00";
+
+                timeLine.Percent = counter;
                 //camView.Sembology = "MehmetCBGL\n" + counter.ToString();
-                Thread.Sleep(1000);
+                Thread.Sleep(50);
             } while (true);
         }
         private void takeSnapshot_Click(object sender, RoutedEventArgs e)
         {
             //camView.takeSnapshot();
+        }
+
+
+        private void mainWindow_SourceInitialized(object sender, EventArgs e)
+        {
+            timeLine.Width = mainWindow.Width;
+            timeLine.LineWidth = timeLine.Width;
         }
     }
 }

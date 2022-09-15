@@ -114,6 +114,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="fe\components\head\timeLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="fe\components\map\cntrlMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -130,6 +134,7 @@
     <Compile Include="be\elevation\srtm\ISRTMDataCell.cs" />
     <Compile Include="be\elevation\srtm\SRTMData.cs" />
     <Compile Include="be\elevation\srtm\SRTMDataCell.cs" />
+    <Compile Include="be\generic\valueScale.cs" />
     <Compile Include="be\sockets\serial.cs" />
     <Compile Include="be\sockets\ssh.cs" />
     <Compile Include="be\sockets\tcpClient.cs" />
@@ -148,6 +153,9 @@
     <Compile Include="be\video\gstreamer\SolidBrushh.cs" />
     <Compile Include="fe\components\camera\cntrlCamera.xaml.cs">
       <DependentUpon>cntrlCamera.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fe\components\head\timeLine.xaml.cs">
+      <DependentUpon>timeLine.xaml</DependentUpon>
     </Compile>
     <Compile Include="fe\components\map\cntrlMap.xaml.cs">
       <DependentUpon>cntrlMap.xaml</DependentUpon>

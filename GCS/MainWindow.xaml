@@ -4,10 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GCS"
-        xmlns:camera="clr-namespace:GCS.fe.components.camera" xmlns:map="clr-namespace:GCS.fe.components.map" x:Class="GCS.MainWindow"
+        xmlns:camera="clr-namespace:GCS.fe.components.camera" xmlns:map="clr-namespace:GCS.fe.components.map" xmlns:head="clr-namespace:GCS.fe.components.head" x:Class="GCS.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" BorderThickness="0" WindowState="Maximized">
-    <Canvas x:Name="container">
+        Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" BorderThickness="0" WindowState="Maximized" Name="mainWindow">
+    <Canvas x:Name="container" >
 
         <!--Video-->
         <!--<camera:cntrlCamera x:Name="camView" Width="{Binding ActualWidth, ElementName=container}" Height="{Binding ActualHeight, ElementName=container}" />-->
@@ -16,5 +16,8 @@
         <!--<map:cntrlMap Width="{Binding ActualWidth, ElementName=container}" Height="{Binding ActualHeight, ElementName=container}" />-->
         <!--Font-->
         <!--<Label Margin="0,0,0,0" Height="100" Width="300" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="Black" FontSize="24" Style="{StaticResource playR}" Content="KONUM TUTUŞ"></Label>-->
+        <!--TimeLine-->
+        <!--<head:timeLine x:Name="timeLine" Width="{Binding ActualWidth, ElementName=container}" LineWidth="1920" Height="20" Margin="0,500,0,0" />-->
+
     </Canvas>
 </Window>
